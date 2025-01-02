@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualization Tool</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stack Visualization Tool</h1>
+
+        <!-- Stack container -->
+        <div class="stack-container">
+            <ul id="stack">
+                <!-- Stack elements will appear here -->
+            </ul>
+        </div>
+
+        <!-- Input and controls -->
+        <div class="controls">
+            <input type="text" id="stackInput" placeholder="Enter a value">
+            <button onclick="handlePush()">Push</button>
+            <button onclick="handlePop()">Pop</button>
+            <button onclick="showPeek()">Peek</button>
+            <button onclick="checkIsEmpty()">Is Empty?</button>
+            <button onclick="displayStack()">Show Stack</button>
+        </div>
+        <div id="message"></div>
+        <div id="peek"></div>
+        <div id="isEmpty"></div>
+        <div id="currentStack"></div>
+    </div>
+
+    <script src="js/stack.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
